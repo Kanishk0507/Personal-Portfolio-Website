@@ -220,8 +220,8 @@ const projects = [
   {
     name: "Personal Portfolio Website",
     description:
-      "A full-stack application designed to help users efficiently track and manage their income, expenses, and savings goals. The system allows users to categorize transactions, visualize spending patterns through dynamic charts, and generate monthly financial summaries.",
-    source_code_link: "https://github.com/Kanishk0507/Personal-Finance-Management-System",
+      "A modern, responsive, and animated portfolio website built with React, Tailwind CSS, and Framer Motion. It showcases my professional experience, technical skills, and featured projects, with interactive UI elements and smooth transitions. The site includes a fully functional contact form powered by EmailJS",
+    source_code_link: "https://github.com/Kanishk0507/Personal-Portfolio-Website",
   },
   {
     name: "Personal Finance Management System",
