@@ -38,27 +38,34 @@ const ServiceCard = ({ index, title }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <section className="w-full flex flex-col items-center justify-center px-4 text-center mb-4">
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+        </motion.div>
+      </section>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with hands-on experience in Swift, Flutter, Java, and JavaScript, and a strong command of frameworks like React, Node.js, and Firebase. I specialize in building intuitive, high-performance mobile and web applications—from AI-driven iOS apps to full-stack solutions.
 
-        I'm a fast learner who thrives in collaborative environments and loves turning complex ideas into practical, user-friendly products. Whether it's crafting a seamless UI or integrating robust backend services, I’m driven to solve real-world problems through clean, scalable code.
+      <section className="w-full flex items-center justify-center px-4 m-0 p-0">
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='text-secondary text-[17px] leading-[30px] max-w-4xl m-0 text-center'
+        >
+          I'm a skilled software developer with hands-on experience in Swift, Flutter, Java, and JavaScript, and a strong command of frameworks like React, Node.js, and Firebase. I specialize in building intuitive, high-performance mobile and web applications—from AI-driven iOS apps to full-stack solutions. <br /><br />
 
-        Let’s work together to turn your vision into reality!
-      </motion.p>
+          I'm a fast learner who thrives in collaborative environments and loves turning complex ideas into practical, user-friendly products. Whether it's crafting a seamless UI or integrating robust backend services, I’m driven to solve real-world problems through clean, scalable code. <br /><br />
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+          Let’s work together to turn your vision into reality!
+        </motion.p>
+      </section>
+
+
+      <div className='mt-20 flex flex-wrap justify-center gap-10'>
+  {services.map((service, index) => (
+    <ServiceCard key={service.title} index={index} {...service} />
+  ))}
+</div>
+
     </>
   );
 };
